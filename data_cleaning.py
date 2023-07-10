@@ -27,3 +27,5 @@ df = pd.DataFrame(d)
 encoder = LabelEncoder()
 
 df['labels'] =encoder.fit_transform(df['emotions']) 
+
+df.to_csv('training_data.csv')
